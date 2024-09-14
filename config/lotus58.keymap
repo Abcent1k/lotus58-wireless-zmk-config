@@ -52,11 +52,11 @@
             //                     |  F11 |      |      |        |  |       |      |       |  F12  |
 
             bindings = <
-&kp TILDE  &kp F1    &kp F2             &kp F3            &kp F4             &kp F5                     &kp F6          &kp F7          &kp F8    &kp F9     &kp F10      &kp MINUS
-&trans     &kp EXCL  &kp LC(BACKSPACE)  &kp UP            &kp END            &kp PRCNT                  &kp C_VOL_UP    &kp PG_UP       &kp INS   &kp CARET  &kp PERCENT  &kp RIGHT_BRACKET
-&trans     &kp AT    &kp LEFT           &kp DOLLAR        &kp RIGHT          &kp DLLR   &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP    &kp RIGHT  &kp TILDE    &kp UNDER
-&trans     &kp AT    &kp MINUS          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPS   &trans  &trans  &kp C_MUTE      &kp ASTERISK    &kp DOWN  &kp COLON  &kp STAR     &kp PIPE
-                                        &kp F11           &trans             &trans     &trans  &trans  &trans          &trans          &kp F12
+&kp TILDE  &kp F1    &kp F2             &kp F3            &kp F4             &kp F5                         &kp F6          &kp F7          &kp F8    &kp F9     &kp F10      &kp MINUS
+&trans     &kp EXCL  &kp LC(BACKSPACE)  &kp UP            &kp END            &kp PRCNT                      &kp C_VOL_UP    &kp PG_UP       &kp INS   &kp CARET  &kp PERCENT  &kp RIGHT_BRACKET
+&trans     &kp AT    &kp LEFT           &kp DELETE        &kp RIGHT          &kp DLLR   &trans  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP    &kp RIGHT  &kp TILDE    &kp UNDER
+&trans     &kp AT    &kp MINUS          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPS   &trans  &kp DELETE  &kp C_MUTE      &kp ASTERISK    &kp DOWN  &kp COLON  &kp STAR     &kp PIPE
+                                        &kp F11           &trans             &trans     &trans  &trans      &trans          &trans          &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
