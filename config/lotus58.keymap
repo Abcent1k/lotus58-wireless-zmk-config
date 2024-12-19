@@ -52,9 +52,7 @@
            &kp LGUI  &kp LALT  &kp SPACE  &mo 1                      &mo 1          &kp ENTER  &kp RIGHT_ALT  &kp LGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         utils_layer {
