@@ -58,7 +58,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp 0 0>,
-                <&msc SCRL_DOWN SCRL_UP>;
+                <&inc_dec_kp SCRL_DOWN SCRL_UP>;
         };
 
         dangerous_level {
