@@ -14,18 +14,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        grave1 {
-            bindings = <&kp GRAVE>;
-            key-positions = <24 0>;
-            layers = <0>;
-        };
-
-        layer3 {
-            bindings = <&mo 0>;
-            key-positions = <56 55>;
-            timeout-ms = <0>;
-        };
     };
 
     keymap {
@@ -60,7 +48,7 @@
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7     &kp F8           &kp F9          &kp F10          &kp F11   &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &kp INS          &kp UP          &none            &none     &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans           &kp PG_DN       &kp LEFT         &kp DOWN  &kp RIGHT  &none          &none
-&trans  &trans  &trans  &trans  &trans  &trans  &kp CAPS   &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp HOME  &kp END    &kp BACKSLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp CLCK   &kp PRINTSCREEN  &kp SLCK        &kp PAUSE_BREAK  &kp HOME  &kp END    &kp BACKSLASH  &trans
         &trans  &trans  &trans  &trans                     &trans           &trans          &trans           &trans
             >;
         };
