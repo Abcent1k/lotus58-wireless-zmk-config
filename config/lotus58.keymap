@@ -37,7 +37,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp 0 0>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         utils_layer {
@@ -58,7 +58,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp 0 0>,
-                <&inc_dec_kp SCRL_DOWN SCRL_UP>;
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         dangerous_level {
