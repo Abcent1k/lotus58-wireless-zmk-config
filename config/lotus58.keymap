@@ -12,10 +12,6 @@
 
 #include "mouse.dtsi"
 
-&sensors {  
-    triggers-per-rotation = <96>;
-};
-
 / {
     combos { compatible = "zmk,combos"; };
 
