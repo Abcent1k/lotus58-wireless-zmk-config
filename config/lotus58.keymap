@@ -12,6 +12,10 @@
 
 #include "mouse.dtsi"
 
+// temporary fix, for my crappy encoders with low resolution
+&left_encoder { steps = <0>; };
+&right_encoder { steps = <0>; };
+
 &sensors {  
     triggers-per-rotation = <96>;
 };
