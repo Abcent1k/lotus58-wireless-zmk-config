@@ -1,24 +1,11 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+#include <dt-bindings/zmk/outputs.h>
 
-#include <dt-bindings/zmk/outputs.h>1
-
-#include "mouse.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// temporary fix, for my crappy encoders with low resolution
-
-&left_encoder { steps = <0>; };
-
-&right_encoder { steps = <0>; };
-
-&sensors { triggers-per-rotation = <96>; };
+#include "mouse.dtsi"
 
 / {
     combos { compatible = "zmk,combos"; };

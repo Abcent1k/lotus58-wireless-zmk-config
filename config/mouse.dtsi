@@ -1,11 +1,9 @@
 // PR 2027 needed: https://github.com/zmkfirmware/zmk/pull/2027
 
-// #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // default: 600
-
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 
-#define ZMK_MOUSE_SCRL_VAL_ENCODER 140    // default: 10
+#define ZMK_MOUSE_SCRL_VAL_ENCODER 300    // default: 10
 
 #define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
 #define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
