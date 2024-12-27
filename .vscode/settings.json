@@ -1,0 +1,20 @@
+{
+    "cSpell.words": [
+        "CLCK",
+        "CTLR",
+        "dtsi",
+        "FSLH",
+        "HKRO",
+        "keymap",
+        "KSCAN",
+        "LBKT",
+        "LCTRL",
+        "LSHFT",
+        "NKRO",
+        "SCRL",
+        "SLCK",
+        "UNDERGLOW",
+        "zmkfirmware"
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
+}
