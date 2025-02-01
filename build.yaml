@@ -9,6 +9,6 @@ include:
   - board: nice_nano_v2
     shield: lotus58_left
   - board: nice_nano_v2
-    shield: lotus58_right
+    shield: lotus58_right nice_view_adapter
   - board: nice_nano_v2
     shield: settings_reset
