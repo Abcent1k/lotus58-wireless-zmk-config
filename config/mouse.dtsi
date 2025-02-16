@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 
-#define ZMK_MOUSE_SCRL_VAL_ENCODER 300    // default: 10
+#define ZMK_MOUSE_SCRL_VAL_ENCODER 450    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
 
 #define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
 #define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
@@ -34,24 +35,3 @@
 		};
 	};
 };
-
-&mmv {
-	acceleration-exponent = <1>;      // 1
-	time-to-max-speed-ms = <500>;    // 40
-	delay-ms = <0>;                   // 0
-};
-
-&msc {
-	acceleration-exponent = <1>;      // 0
-	time-to-max-speed-ms = <40>;      // 500
-	delay-ms = <0>;                   // 10
-};
-
-#define U_MS_U &mmv MOVE_UP
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
-#define U_WH_U &msc SCRL_UP
-#define U_WH_D &msc SCRL_DOWN
-#define U_WH_L &msc SCRL_LEFT
-#define U_WH_R &msc SCRL_RIGHT
