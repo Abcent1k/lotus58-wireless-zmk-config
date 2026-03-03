@@ -7,8 +7,8 @@
 ---
 include:
   - board: nice_nano@2.0.0//zmk
-    shield: lotus58_left nice_view_adapter nice_view_gem
+    shield: lotus58_left
   - board: nice_nano@2.0.0//zmk
-    shield: lotus58_right
+    shield: lotus58_right nice_view_adapter nice_view_gem
   - board: nice_nano@2.0.0//zmk
     shield: settings_reset
