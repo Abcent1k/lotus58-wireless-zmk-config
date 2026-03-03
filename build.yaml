@@ -6,9 +6,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: lotus58_left nice_view_adapter nice_view_gem
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: lotus58_right
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: settings_reset
