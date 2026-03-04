@@ -1,5 +1,0 @@
-/ {
-    chosen {
-        zmk,split-role = "peripheral";
-    };
-};
