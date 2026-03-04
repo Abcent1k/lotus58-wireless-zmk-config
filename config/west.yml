@@ -1,16 +1,16 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/Abcent1k
+    - name: zmkfirmware #zmkfirmware
+      url-base: https://github.com/Abcent1k #fork it from https://github.com/zmkfirmware/zmk/tree/v0.3-branch
     - name: nice-view #nice!view custom widgets
-      url-base: https://github.com/Abcent1k #nice!view custom widgets
+      url-base: https://github.com/Abcent1k #fork it from https://github.com/M165437/nice-view-gem (I use release v.0.3.0)
   projects:
-    - name: zmk
+    - name: zmk #repository name
       remote: zmkfirmware
-      revision: v0.3-branch-Lotus58-Right
+      revision: v0.3-branch-Lotus58-Right #branch or tag
       import: app/west.yml
-    - name: nice-view-gem #nice!view custom widgets
+    - name: nice-view-gem #repository name
       remote: nice-view #nice!view custom widgets
-      revision: main #nice!view custom widgets
+      revision: main #branch or tag
   self:
     path: config
