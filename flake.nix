@@ -46,6 +46,7 @@
           right = "lotus58_right nice_view_adapter nice_view_gem";
         };
         centralPart = "right";
+        meta.description = "ZMK firmware for Lotus58";
       });
 
       settings-reset = buildKeyboard (common // {
