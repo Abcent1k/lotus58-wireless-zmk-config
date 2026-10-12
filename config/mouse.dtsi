@@ -1,7 +1,8 @@
-#define ZMK_MOUSE_SCRL_VAL_ENCODER 50    // default: 10
+#define ZMK_MOUSE_SCRL_VAL_ENCODER 50
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
 
 #include <dt-bindings/zmk/pointing.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define SCRL_UP_ENCODER MOVE_Y(ZMK_MOUSE_SCRL_VAL_ENCODER)
 #define SCRL_DOWN_ENCODER MOVE_Y(-ZMK_MOUSE_SCRL_VAL_ENCODER)
@@ -10,11 +11,21 @@
 
 / {
 	behaviors {
+		enc_msc: encoder_mouse_scroll {
+			compatible = "zmk,behavior-input-two-axis";
+			#binding-cells = <1>;
+			x-input-code = <INPUT_REL_HWHEEL>;
+			y-input-code = <INPUT_REL_WHEEL>;
+			trigger-period-ms = <20>;
+			time-to-max-speed-ms = <0>;
+			acceleration-exponent = <0>;
+		};
+
 		inc_dec_msc: behavior_sensor_rotate_mouse_wheel {
 			compatible = "zmk,behavior-sensor-rotate-var";
 			#sensor-binding-cells = <2>;
-			bindings = <&msc>, <&msc>;
-			tap-ms = <20>;
+			bindings = <&enc_msc>, <&enc_msc>;
+			tap-ms = <30>;
 		};
 
 		inc_dec_mmv: behavior_sensor_rotate_mouse_movement {
@@ -30,5 +41,10 @@
 			bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 			tap-ms = <20>;
 		};
+	};
+
+	enc_msc_input_listener: enc_msc_input_listener {
+		compatible = "zmk,input-listener";
+		device = <&enc_msc>;
 	};
 };
